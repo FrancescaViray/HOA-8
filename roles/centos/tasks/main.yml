@@ -1,0 +1,9 @@
+---
+  - name: install Nagios on CentOS
+    dnf:
+      name:
+        - nagios
+      state: latest
+    when: ansible_distribution == "CentOS"
+
+
